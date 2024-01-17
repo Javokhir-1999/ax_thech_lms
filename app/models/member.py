@@ -12,6 +12,6 @@ class Member(Base):
     id = Column(Integer, primary_key=True, index=True)
     name = Column(String)
     contact_information = Column(String)
-    permissions = Column(String)  # This can be expanded or modified based on your auth system
+    permissions = Column(String) 
     membership_status = Column(Enum(MembershipStatus))
-    membership_period = Column(Integer)  # Assuming membership period is in days
+    membership_period = Column(Integer)
